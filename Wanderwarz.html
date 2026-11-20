@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WanderWarz Tour and Travels | Curated India & Global Experiences</title>
+
+  <!-- Google SEO Meta Tags -->
+  <meta name="description" content="WanderWarz Tour and Travels. Custom domestic and international tour packages for Himachal (Shimla, Manali, Spiti), Rajasthan, Kashmir, Spiritual Yatras, Beaches, and Global Destinations." />
+  <meta name="keywords" content="WanderWarz, WanderWarz Tour and Travels, Shimla Manali package, Himachal tour, Rajasthan trip, Kashmir tour, international tour packages, luxury travel agency" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="WanderWarz Tour and Travels | Curated India & Global Experiences" />
+  <meta property="og:description" content="Explore misty hills, golden sunsets, turquoise beaches, sacred yatras & international escapes with WanderWarz (+91 7428227902)." />
+  <meta property="og:type" content="website" />
+
+  <!-- Structured Data for Google Business Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "WanderWarz Tour and Travels",
+    "founder": "Yuvi",
+    "telephone": "+91-7428227902",
+    "areaServed": "India and International",
+    "description": "Customized tour and travel packages for Himachal Pradesh, Rajasthan, Kashmir, spiritual yatras, tropical beaches, and international destinations."
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+          },
+          colors: {
+            brand: {
+              sand: '#FBF9F5',
+              stone: '#F3EFE6',
+              forest: '#16302B',
+              forestDeep: '#0D1F1C',
+              sunset: '#D96B27',
+              sunsetHover: '#B85519',
+              gold: '#E5A93B',
+              ocean: '#1D6A74',
+              ink: '#1C1917',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: scale(1.04);
+      transition: opacity 1.1s ease-in-out, transform 6s ease-out;
+    }
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .card-lift {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+    }
+    .card-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 40px -12px rgba(22, 48, 43, 0.14);
+    }
+    .img-zoom {
+      transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .group:hover .img-zoom {
+      transform: scale(1.07);
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-reveal {
+      animation: fadeSlideUp 0.45s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-brand-sand text-brand-ink antialiased pb-20 md:pb-0">
+
+  <!-- Top Utility Ribbon -->
+  <div class="bg-brand-forestDeep text-stone-300 text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+        <span>Curated Hills, Sunsets, Beaches, Spiritual Yatras &amp; Global Escapes</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:+917428227902" class="hover:text-brand-gold transition font-semibold flex items-center gap-1.5">
+          <span>📞 +91 7428227902</span>
+        </a>
+        <a href="https://wa.me/917428227902?text=Hi%20WanderWarz,%20I%20would%20like%20to%20plan%20a%20custom%20holiday." target="_blank" class="hidden sm:inline-flex items-center gap-1 text-amber-300 hover:text-amber-200 font-semibold">
+          WhatsApp Travel Desk →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-40 bg-brand-sand/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-brand-forest flex items-center justify-center text-brand-gold font-serif font-bold text-2xl shadow-sm">
+          W
+        </div>
+        <div>
+          <span class="font-serif font-bold text-2xl tracking-tight text-brand-forest block leading-none">WanderWarz</span>
+          <span class="text-[10px] uppercase tracking-[0.22em] text-stone-500 font-semibold">Tour &amp; Travels</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
+        <a href="#horizons" class="hover:text-brand-sunset transition">Scenic Horizons</a>
+        <a href="#ai-planner" class="text-brand-sunset hover:text-brand-sunsetHover transition flex items-center gap-1">✨ AI Trip Designer</a>
+        <a href="#destinations" class="hover:text-brand-sunset transition">All Packages</a>
+        <a href="#custom-inquiry" class="hover:text-brand-sunset transition">Custom Planner</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+917428227902" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full border border-stone-300 text-stone-800 hover:bg-stone-100 text-xs font-bold transition">
+          Call Desk
+        </a>
+        <a href="#ai-planner" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestDeep text-white text-xs font-bold shadow-md transition">
+          ✨ Design AI Trip
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Atmospheric Scenic Hero with Interactive Backdrop Switcher -->
+  <section class="relative min-h-[86vh] flex items-center text-white overflow-hidden">
+    <!-- Slide 1: Himalayan Hills & Mountains -->
+    <div class="hero-slide active" data-slide="0" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=85');"></div>
+    <!-- Slide 2: Golden Hour Sunset -->
+    <div class="hero-slide" data-slide="1" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=85');"></div>
+    <!-- Slide 3: Tropical Beaches & Islands -->
+    <div class="hero-slide" data-slide="2" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1920&q=85');"></div>
+
+    <!-- Editorial Gradient Vignette -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-brand-forestDeep/95"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-amber-200 text-xs font-semibold tracking-widest uppercase mb-6">
+        <span>Misty Hills</span> • <span>Golden Sunsets</span> • <span>Turquoise Beaches</span> • <span>Global Horizons</span>
+      </div>
+
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight max-w-4xl mx-auto mb-6">
+        Where Mountain Peaks Meet <span class="italic text-brand-gold">Golden Sunsets</span> &amp; Ocean Waves
+      </h1>
+
+      <p class="text-stone-200 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        Tailor-made holidays across Shimla, Manali, Spiti, Kashmir, Rajasthan, sacred Indian pilgrimages, tropical coastlines, and luxury international destinations.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="#ai-planner" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-sunset hover:bg-brand-sunsetHover text-white font-bold text-sm tracking-wide shadow-xl transition">
+          ✨ Build Instant AI Itinerary
+        </a>
+        <a href="#custom-inquiry" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-bold text-sm tracking-wide transition">
+          Customize Your Package
+        </a>
+      </div>
+
+      <!-- Interactive Scenic Backdrop Switcher Pills -->
+      <div class="inline-flex flex-wrap items-center justify-center gap-2 p-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/15">
+        <button type="button" data-target="0" class="hero-pill active px-4 py-2 rounded-full text-xs font-bold bg-white text-brand-forest shadow-sm transition cursor-pointer">
+          🏔️ Himalayan Hills
+        </button>
+        <button type="button" data-target="1" class="hero-pill px-4 py-2 rounded-full text-xs font-bold text-white/85 hover:text-white transition cursor-pointer">
+          🌅 Golden Sunset
+        </button>
+        <button type="button" data-target="2" class="hero-pill px-4 py-2 rounded-full text-xs font-bold text-white/85 hover:text-white transition cursor-pointer">
+          🏖️ Tropical Beaches
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Mood Gallery: Hills, Mountains, Sunsets & Beaches -->
+  <section id="horizons" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-brand-sunset font-bold text-xs uppercase tracking-[0.2em]">Visual Inspiration</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-forest mt-2">Choose Your Scenic Escape</h2>
+      </div>
+      <p class="text-stone-600 text-sm max-w-md">
+        Click any landscape mood below to explore matching all-inclusive tour circuits across India and abroad.
+      </p>
+    </div>
+
+    <!-- Bento Grid of Photography -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <!-- Card 1: Misty Hills & Snow Mountains (Large Left) -->
+      <a href="#destinations" onclick="triggerCategoryFilter('himachal')" class="group md:col-span-7 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=1200&q=85" alt="Snowy Himalayan Mountains in Himachal" class="w-full h-full object-cover img-zoom" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider">Himachal &amp; Kashmir</span>
+          <h3 class="font-serif text-3xl font-bold mt-2">Misty Hills &amp; Snow-Capped Peaks</h3>
+          <p class="text-xs sm:text-sm text-stone-200 mt-1">Shimla • Manali • Spiti Valley • Gulmarg • Kasol →</p>
+        </div>
+      </a>
+
+      <!-- Card 2: Golden Sunset Over Water & Dunes (Right) -->
+      <a href="#destinations" onclick="triggerCategoryFilter('pan-india')" class="group md:col-span-5 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1000&q=85" alt="Golden Sunset over Udaipur Palace and Lakes" class="w-full h-full object-cover img-zoom" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="px-3 py-1 rounded-full bg-brand-sunset/80 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider">Royal Sunsets</span>
+          <h3 class="font-serif text-3xl font-bold mt-2">Lakes, Dunes &amp; Golden Horizons</h3>
+          <p class="text-xs sm:text-sm text-stone-200 mt-1">Udaipur • Jaisalmer Desert • Jaipur • Pushkar →</p>
+        </div>
+      </a>
+
+      <!-- Card 3: Tropical Beaches & Sunset Shores (Bottom Left) -->
+      <a href="#destinations" onclick="triggerCategoryFilter('beach')" class="group md:col-span-5 relative h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1000&q=85" alt="Tropical Beach Sunset Palms" class="w-full h-full object-cover img-zoom" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="px-3 py-1 rounded-full bg-brand-ocean/85 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider">Sun, Sand &amp; Sea</span>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-2">Tropical Beaches &amp; Islands</h3>
+          <p class="text-xs sm:text-sm text-stone-200 mt-1">Goa • Andaman • Kerala • Maldives • Bali →</p>
+        </div>
+      </a>
+
+      <!-- Card 4: Sacred River Ghats & Spiritual Peaks (Bottom Right) -->
+      <a href="#destinations" onclick="triggerCategoryFilter('religious')" class="group md:col-span-7 relative h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=85" alt="Sacred Varanasi Ganga Sunset" class="w-full h-full object-cover img-zoom" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="px-3 py-1 rounded-full bg-amber-500/85 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider">Sacred Journeys</span>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-2">Spiritual Yatras &amp; Temple Circuits</h3>
+          <p class="text-xs sm:text-sm text-stone-200 mt-1">Char Dham • Kedarnath • Kashi Ganga Aarti • Ayodhya • Vaishno Devi →</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Intelligent AI Trip & Budget Designer -->
+  <section id="ai-planner" class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="bg-brand-forest text-white rounded-[2rem] shadow-2xl overflow-hidden border border-white/10 p-6 sm:p-10 lg:p-12">
+      <div class="max-w-2xl mb-8">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs font-bold uppercase tracking-wider mb-3">
+          ✨ Smart AI Travel Architect
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">Instant AI Day-by-Day Itinerary &amp; Cost Estimator</h2>
+        <p class="text-stone-300 text-sm sm:text-base mt-2">
+          Select your destination, travel companions, and comfort preference to generate an instant schedule, weather &amp; packing checklist, and starting estimate.
+        </p>
+      </div>
+
+      <!-- AI Input Bar -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/15">
+        <div>
+          <label class="block text-[11px] font-bold text-brand-gold uppercase tracking-wider mb-2">1. Destination</label>
+          <select id="ai-dest" class="w-full px-4 py-3 rounded-xl bg-brand-forestDeep text-white border border-white/20 text-sm outline-none focus:border-brand-gold">
+            <option value="shimla-manali">Shimla &amp; Manali Hills</option>
+            <option value="spiti-valley">Spiti Valley &amp; Kinnaur</option>
+            <option value="kashmir">Kashmir Snow &amp; Lakes</option>
+            <option value="rajasthan">Rajasthan Sunset &amp; Forts</option>
+            <option value="chardham">Char Dham Sacred Yatra</option>
+            <option value="varanasi-ayodhya">Varanasi, Ayodhya &amp; Prayagraj</option>
+            <option value="goa-andaman">Goa &amp; Andaman Beaches</option>
+            <option value="kerala">Kerala Backwaters &amp; Kovalam</option>
+            <option value="dubai">Dubai &amp; Abu Dhabi</option>
+            <option value="bali-thailand">Bali / Thailand / Maldives</option>
+            <option value="singapore-malaysia">Singapore &amp; Malaysia</option>
+            <option value="vietnam-cambodia">Vietnam &amp; Cambodia</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-brand-gold uppercase tracking-wider mb-2">2. Travel Style</label>
+          <select id="ai-group" class="w-full px-4 py-3 rounded-xl bg-brand-forestDeep text-white border border-white/20 text-sm outline-none focus:border-brand-gold">
+            <option value="Couple / Honeymoon">Couple / Honeymoon</option>
+            <option value="Family with Kids">Family with Kids</option>
+            <option value="Friends / Adventure Group">Friends / Adventure Group</option>
+            <option value="Senior Citizens">Senior Citizens (Easy Pace)</option>
+            <option value="Solo Explorer">Solo Explorer</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-brand-gold uppercase tracking-wider mb-2">3. Comfort Tier</label>
+          <select id="ai-tier" class="w-full px-4 py-3 rounded-xl bg-brand-forestDeep text-white border border-white/20 text-sm outline-none focus:border-brand-gold">
+            <option value="Budget Saver">Budget Saver (3★ / Volvo)</option>
+            <option value="Standard Comfort" selected>Standard Comfort (3★/4★ + Cab)</option>
+            <option value="Luxury Escape">Luxury Escape (4★/5★ Resorts)</option>
+          </select>
+        </div>
+
+        <div class="flex items-end">
+          <button id="generate-ai-btn" type="button" class="w-full py-3 px-5 rounded-xl bg-brand-sunset hover:bg-brand-sunsetHover text-white font-bold text-sm shadow-lg transition cursor-pointer">
+            ✨ Generate AI Plan
+          </button>
+        </div>
+      </div>
+
+      <!-- AI Result Container -->
+      <div id="ai-output" class="hidden mt-8 bg-brand-sand text-brand-ink rounded-2xl p-6 sm:p-8 shadow-2xl animate-reveal"></div>
+    </div>
+  </section>
+
+  <!-- Filterable All-India & International Packages Grid (12 Balanced Cards = 4 Full Rows of 3) -->
+  <section id="destinations" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-brand-sunset font-bold text-xs uppercase tracking-[0.2em]">Curated Packages</span>
+      <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-forest mt-2 mb-4">All-India &amp; Global Tour Collection</h2>
+      <p class="text-stone-600 text-sm sm:text-base">
+        Explore our most-loved domestic and international circuits. Select any package for instant rates and customization on WhatsApp.
+      </p>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="flex flex-wrap items-center justify-center gap-2.5 mb-12" id="filter-buttons">
+      <button data-filter="all" class="filter-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-brand-forest text-white shadow-md transition cursor-pointer">
+        All Destinations (12)
+      </button>
+      <button data-filter="himachal" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-stone-700 border border-stone-300 hover:border-brand-forest transition cursor-pointer">
+        🏔️ Himachal &amp; Hills
+      </button>
+      <button data-filter="pan-india" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-stone-700 border border-stone-300 hover:border-brand-forest transition cursor-pointer">
+        🌅 Pan-India (Rajasthan &amp; Kashmir)
+      </button>
+      <button data-filter="religious" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-stone-700 border border-stone-300 hover:border-brand-forest transition cursor-pointer">
+        🛕 Religious Yatras
+      </button>
+      <button data-filter="beach" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-stone-700 border border-stone-300 hover:border-brand-forest transition cursor-pointer">
+        🏖️ Beaches &amp; Islands
+      </button>
+      <button data-filter="international" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-stone-700 border border-stone-300 hover:border-brand-forest transition cursor-pointer">
+        ✈️ International Holidays
+      </button>
+    </div>
+
+    <!-- Packages Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="packages-grid"></div>
+  </section>
+
+  <!-- Custom Trip Dropdown Inquiry Form -->
+  <section id="custom-inquiry" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="bg-white rounded-[2rem] shadow-xl border border-stone-200/90 overflow-hidden">
+      <div class="bg-brand-forest text-white px-8 py-8">
+        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Bespoke Travel Desk</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-1">Customize Your Trip Details</h2>
+        <p class="text-stone-300 text-sm mt-1">Choose your preferred region, hotel category, duration, and transport from the dropdowns below.</p>
+      </div>
+
+      <form id="custom-trip-form" class="p-8 sm:p-10 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Your Name *</label>
+            <input type="text" id="c-name" required placeholder="e.g., Rohan Verma" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">WhatsApp / Phone *</label>
+            <input type="tel" id="c-phone" required placeholder="e.g., 9876543210" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Select Tour Region</label>
+            <select id="c-region" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand">
+              <option value="Himachal Pradesh (Shimla / Manali / Spiti / Kasol)">Himachal Pradesh (Shimla / Manali / Spiti / Kasol)</option>
+              <option value="Pan-India Scenic (Kashmir / Rajasthan / Uttarakhand / North East)">Pan-India Scenic (Kashmir / Rajasthan / Uttarakhand / North East)</option>
+              <option value="Religious Yatra (Char Dham / Varanasi / Ayodhya / Vaishno Devi)">Religious Yatra (Char Dham / Varanasi / Ayodhya / Vaishno Devi)</option>
+              <option value="Beaches & Islands (Goa / Andaman / Kerala / Lakshadweep)">Beaches &amp; Islands (Goa / Andaman / Kerala / Lakshadweep)</option>
+              <option value="International Holiday (Dubai / Bali / Thailand / Singapore / Vietnam)">International Holiday (Dubai / Bali / Thailand / Singapore / Vietnam)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Preferred Destination(s)</label>
+            <input type="text" id="c-dest" placeholder="e.g., Manali & Atal Tunnel, Goa, Bali..." class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Trip Duration</label>
+            <select id="c-duration" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand">
+              <option value="3 Days / 2 Nights">3 Days / 2 Nights</option>
+              <option value="5 Days / 4 Nights" selected>5 Days / 4 Nights</option>
+              <option value="7 Days / 6 Nights">7 Days / 6 Nights</option>
+              <option value="10+ Days Custom Circuit">10+ Days Custom Circuit</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Hotel Preference</label>
+            <select id="c-hotel" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand">
+              <option value="3-Star Comfort Hotel">3-Star Comfort Hotel</option>
+              <option value="4-Star Deluxe Resort" selected>4-Star Deluxe Resort</option>
+              <option value="5-Star Luxury / Boutique Stay">5-Star Luxury / Boutique Stay</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Cab / Travel Mode</label>
+            <select id="c-transport" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand">
+              <option value="Private Sedan Cab">Private Sedan Cab</option>
+              <option value="Private SUV (Innova / Ertiga)" selected>Private SUV (Innova / Ertiga)</option>
+              <option value="Tempo Traveller (Group)">Tempo Traveller (Group)</option>
+              <option value="Flights + Private Transfers">Flights + Private Transfers</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Special Notes (Pickup City, Dates, Group Size)</label>
+          <textarea id="c-notes" rows="2" placeholder="e.g., 4 adults from Delhi next month, looking for sunset beach resort or snow view room..." class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-forest outline-none text-sm bg-brand-sand"></textarea>
+        </div>
+
+        <div class="pt-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <span class="text-xs text-stone-500">Direct Desk: <strong>+91 7428227902</strong> • Fast WhatsApp Response</span>
+          <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg transition cursor-pointer">
+            💬 Send Custom Inquiry on WhatsApp →
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-forestDeep text-stone-400 py-14 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+      <div>
+        <div class="font-serif text-2xl font-bold text-white mb-2">WanderWarz</div>
+        <p class="text-xs leading-relaxed text-stone-400">
+          Curating unforgettable mountain escapes, sunset desert tours, tropical beach holidays, sacred yatras, and global adventures.
+        </p>
+      </div>
+      <div>
+        <div class="font-bold text-white mb-3 text-xs uppercase tracking-wider">Mountains &amp; Hills</div>
+        <ul class="space-y-1.5 text-xs">
+          <li>• Shimla, Kufri &amp; Manali</li>
+          <li>• Kasol, Tosh &amp; Spiti Valley</li>
+          <li>• Kashmir (Gulmarg &amp; Pahalgam)</li>
+          <li>• Dharamshala &amp; Dalhousie</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-bold text-white mb-3 text-xs uppercase tracking-wider">Beaches, Yatras &amp; Global</div>
+        <ul class="space-y-1.5 text-xs">
+          <li>• Goa, Andaman &amp; Kerala Beaches</li>
+          <li>• Char Dham, Varanasi &amp; Ayodhya</li>
+          <li>• Royal Rajasthan Sunset Circuits</li>
+          <li>• Dubai, Bali, Thailand, Singapore &amp; Vietnam</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-bold text-white mb-3 text-xs uppercase tracking-wider">Travel Concierge</div>
+        <a href="tel:+917428227902" class="block text-lg font-bold text-brand-gold hover:underline mb-1">
+          📞 +91 7428227902
+        </a>
+        <a href="https://wa.me/917428227902" target="_blank" class="text-xs text-emerald-400 hover:underline font-semibold">
+          💬 Chat Directly on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+      <p>© <span id="year"></span> WanderWarz Tour and Travels. All rights reserved.</p>
+      <p class="mt-2 sm:mt-0">Domestic &amp; International Tour Specialists</p>
+    </div>
+  </footer>
+
+  <!-- Floating 24/7 AI Travel Concierge Widget -->
+  <div class="fixed bottom-16 md:bottom-6 right-4 sm:right-6 z-50">
+    <div id="ai-chat-window" class="hidden mb-3 w-80 sm:w-96 bg-white rounded-3xl shadow-2xl border border-stone-200 overflow-hidden animate-reveal">
+      <div class="bg-brand-forest text-white px-5 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-brand-gold text-brand-forestDeep font-bold flex items-center justify-center text-sm">✨</div>
+          <div>
+            <div class="font-bold text-sm leading-tight">WanderWarz AI Concierge</div>
+            <div class="text-[11px] text-amber-200">● Online • Hills, Beaches &amp; Visas</div>
+          </div>
+        </div>
+        <button id="close-chat-btn" class="text-stone-300 hover:text-white text-lg font-bold cursor-pointer">✕</button>
+      </div>
+
+      <div id="chat-messages" class="p-4 h-72 overflow-y-auto space-y-3 bg-brand-sand text-sm">
+        <div class="bg-white p-3.5 rounded-2xl rounded-tl-none border border-stone-200 text-stone-700">
+          Namaste! 👋 Ask me about snowfall in <strong>Manali/Kashmir</strong>, sunset tours in <strong>Rajasthan/Goa</strong>, <strong>Char Dham</strong> yatras, or <strong>Dubai/Bali/Singapore</strong> visas!
+        </div>
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <button type="button" class="quick-ask text-xs bg-stone-200/70 text-brand-forest px-3 py-1 rounded-full hover:bg-stone-300/70 font-semibold cursor-pointer">Snowfall in Manali?</button>
+          <button type="button" class="quick-ask text-xs bg-stone-200/70 text-brand-forest px-3 py-1 rounded-full hover:bg-stone-300/70 font-semibold cursor-pointer">Best beach sunsets?</button>
+          <button type="button" class="quick-ask text-xs bg-stone-200/70 text-brand-forest px-3 py-1 rounded-full hover:bg-stone-300/70 font-semibold cursor-pointer">Dubai &amp; Bali visas?</button>
+        </div>
+      </div>
+
+      <form id="chat-form" class="p-3 bg-white border-t border-stone-200 flex items-center gap-2">
+        <input type="text" id="chat-input" placeholder="Ask about hills, beaches, packages..." class="flex-1 px-3.5 py-2 text-sm bg-brand-sand rounded-full outline-none focus:ring-2 focus:ring-brand-forest" />
+        <button type="submit" class="px-4 py-2 rounded-full bg-brand-forest hover:bg-brand-forestDeep text-white text-xs font-bold cursor-pointer">Send</button>
+      </form>
+    </div>
+
+    <button id="open-chat-btn" class="ml-auto flex items-center gap-2 px-5 py-3.5 rounded-full bg-brand-forest hover:bg-brand-forestDeep text-white font-bold text-xs sm:text-sm shadow-2xl border border-white/15 transition cursor-pointer">
+      <span class="text-brand-gold">✨</span> Ask AI Concierge
+    </button>
+  </div>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-brand-forestDeep border-t border-white/10 grid grid-cols-2">
+    <a href="tel:+917428227902" class="flex items-center justify-center gap-2 py-3.5 text-white font-bold text-xs border-r border-white/10">
+      📞 Call Desk
+    </a>
+    <a href="https://wa.me/917428227902?text=Hi%20WanderWarz,%20I%20want%20to%20plan%20a%20trip." target="_blank" class="flex items-center justify-center gap-2 py-3.5 bg-emerald-600 text-white font-bold text-xs">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script>
+    const PHONE_NUMBER = "917428227902";
+
+    /* --- 1. HERO SCENIC BACKDROP SWITCHER --- */
+    const slides = document.querySelectorAll(".hero-slide");
+    const heroPills = document.querySelectorAll(".hero-pill");
+    let currentSlide = 0;
+
+    function setHeroSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+      heroPills.forEach((p, i) => {
+        if (i === index) {
+          p.classList.add("bg-white", "text-brand-forest", "shadow-sm");
+          p.classList.remove("text-white/85");
+        } else {
+          p.classList.remove("bg-white", "text-brand-forest", "shadow-sm");
+          p.classList.add("text-white/85");
+        }
+      });
+      currentSlide = index;
+    }
+
+    heroPills.forEach(pill => {
+      pill.addEventListener("click", () => setHeroSlide(Number(pill.dataset.target)));
+    });
+
+    setInterval(() => {
+      setHeroSlide((currentSlide + 1) % slides.length);
+    }, 6500);
+
+    /* --- 2. PACKAGES DATA (12 CURATED CARDS FOR A FULL 3x4 GRID) --- */
+    const packages = [
+      {
+        title: "Shimla & Manali Alpine Escape",
+        category: "himachal",
+        tag: "Misty Hills",
+        duration: "5 Days / 4 Nights",
+        locations: "Shimla • Kufri • Manali • Solang Valley • Atal Tunnel",
+        image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
+        highlights: "Pine-covered mountain ridges, snow valleys & cozy hill-view stays with private cab."
+      },
+      {
+        title: "Spiti Valley & Kinnaur Mountain Trail",
+        category: "himachal",
+        tag: "High Himalayas",
+        duration: "7 Days / 6 Nights",
+        locations: "Kalpa • Nako • Tabo • Kaza • Key Monastery • Chandratal",
+        image: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=800&q=80",
+        highlights: "Dramatic cold-desert peaks, ancient monasteries & stargazing alpine camps."
+      },
+      {
+        title: "Kashmir Snow & Dal Lake Retreat",
+        category: "pan-india",
+        tag: "Mountain Paradise",
+        duration: "6 Days / 5 Nights",
+        locations: "Srinagar • Gulmarg Gondola • Pahalgam • Sonamarg",
+        image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80",
+        highlights: "Sunset Shikara rides on Dal Lake, snow meadows & cedar-lined valleys."
+      },
+      {
+        title: "Royal Rajasthan Sunset & Palaces",
+        category: "pan-india",
+        tag: "Golden Horizons",
+        duration: "7 Days / 6 Nights",
+        locations: "Jaipur • Jodhpur • Udaipur Lake Pichola • Jaisalmer Dunes",
+        image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80",
+        highlights: "Golden-hour desert safaris, lakeside sunset boat rides & royal heritage stays."
+      },
+      {
+        title: "Sacred Char Dham Himalayan Yatra",
+        category: "religious",
+        tag: "Spiritual Pilgrimage",
+        duration: "10 Days / 9 Nights",
+        locations: "Haridwar • Yamunotri • Gangotri • Kedarnath • Badrinath",
+        image: "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?auto=format&fit=crop&w=800&q=80",
+        highlights: "Senior-friendly pacing, verified clean stays & complete yatra registration support."
+      },
+      {
+        title: "Kashi, Ayodhya & Ganga Aarti Circuit",
+        category: "religious",
+        tag: "Sacred Ghats",
+        duration: "4 Days / 3 Nights",
+        locations: "Varanasi Sunrise Boat • Kashi Vishwanath • Ayodhya Ram Mandir",
+        image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
+        highlights: "Witness mesmerizing evening Ganga Aarti at sunset & guided temple darshans."
+      },
+      {
+        title: "Goa & Andaman Sunset Beach Holiday",
+        category: "beach",
+        tag: "Turquoise Shores",
+        duration: "5 Days / 4 Nights",
+        locations: "North & South Goa • Havelock Island • Radhanagar Sunset Beach",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        highlights: "Beachfront resorts, scuba diving, island cruises & golden sunset dinners by the sea."
+      },
+      {
+        title: "Kerala Hills & Kovalam Cliff Beaches",
+        category: "beach",
+        tag: "Hills & Coast",
+        duration: "6 Days / 5 Nights",
+        locations: "Munnar Misty Hills • Alleppey Houseboat • Varkala & Kovalam",
+        image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80",
+        highlights: "Emerald tea hills, private backwater houseboat & Arabian Sea sunset cliffs."
+      },
+      {
+        title: "Dubai Skyline & Desert Sunset",
+        category: "international",
+        tag: "Global Luxury",
+        duration: "5 Days / 4 Nights",
+        locations: "Burj Khalifa • Red Dunes Sunset Safari • Marina Dhow Cruise",
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+        highlights: "Includes UAE tourist visa, desert BBQ under the stars & private airport transfers."
+      },
+      {
+        title: "Bali, Thailand & Maldives Islands",
+        category: "international",
+        tag: "Exotic Beaches",
+        duration: "6 Days / 5 Nights",
+        locations: "Ubud & Nusa Penida • Phuket & Krabi • Maldives Water Villas",
+        image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80",
+        highlights: "Crystal-clear lagoons, island hopping, beach clubs & romantic sunset villas."
+      },
+      {
+        title: "Singapore & Malaysia Family Delight",
+        category: "international",
+        tag: "Twin-Country Escape",
+        duration: "6 Days / 5 Nights",
+        locations: "Sentosa Island • Universal Studios • Gardens by the Bay • Kuala Lumpur",
+        image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+        highlights: "Night Safari, Marina Bay light show, Batu Caves & Genting Highlands cable car."
+      },
+      {
+        title: "Vietnam & Cambodia Cultural Escape",
+        category: "international",
+        tag: "Scenic Asia",
+        duration: "7 Days / 6 Nights",
+        locations: "Ha Long Bay Cruise • Hanoi • Da Nang Golden Bridge • Angkor Wat",
+        image: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80",
+        highlights: "Limestone emerald bays, lantern-lit Hoi An evenings & sunrise over ancient temples."
+      }
+    ];
+
+    const grid = document.getElementById("packages-grid");
+    const filterBtns = document.querySelectorAll(".filter-btn");
+
+    function renderPackages(filter = "all") {
+      const filtered = filter === "all" ? packages : packages.filter(p => p.category === filter);
+      grid.innerHTML = filtered.map(pkg => {
+        const waText = encodeURIComponent(`Hi WanderWarz! I'm interested in "${pkg.title}" (${pkg.duration}). Please share rates and itinerary details.`);
+        return `
+          <article class="group bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm card-lift flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-stone-200">
+              <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover img-zoom" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-brand-forestDeep/85 backdrop-blur-md text-white text-[11px] font-bold tracking-wide">
+                ${pkg.tag}
+              </span>
+              <span class="absolute bottom-3.5 right-3.5 px-3 py-1 rounded-full bg-black/65 backdrop-blur-sm text-amber-200 text-xs font-semibold">
+                ${pkg.duration}
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-2xl font-bold text-brand-forest mb-1.5">${pkg.title}</h3>
+                <p class="text-xs font-bold text-brand-sunset mb-3">${pkg.locations}</p>
+                <p class="text-sm text-stone-600 leading-relaxed mb-6">${pkg.highlights}</p>
+              </div>
+              <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-3">
+                <a href="tel:+${PHONE_NUMBER}" class="text-xs font-bold text-stone-600 hover:text-brand-forest transition">
+                  📞 Call for Quote
+                </a>
+                <a href="https://wa.me/${PHONE_NUMBER}?text=${waText}" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-brand-forest hover:bg-brand-forestDeep text-white text-xs font-bold transition">
+                  Inquire on WhatsApp →
+                </a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function triggerCategoryFilter(cat) {
+      filterBtns.forEach(b => {
+        if (b.dataset.filter === cat) {
+          b.click();
+        }
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterBtns.forEach(b => {
+          b.classList.remove("bg-brand-forest", "text-white", "shadow-md");
+          b.classList.add("bg-white", "text-stone-700", "border", "border-stone-300");
+        });
+        btn.classList.remove("bg-white", "text-stone-700", "border", "border-stone-300");
+        btn.classList.add("bg-brand-forest", "text-white", "shadow-md");
+        renderPackages(btn.dataset.filter);
+      });
+    });
+
+    /* --- 3. AI ITINERARY & BUDGET GENERATOR --- */
+    const aiBlueprints = {
+      "shimla-manali": {
+        name: "Shimla & Manali Alpine Escape",
+        duration: "5 Days / 4 Nights",
+        season: "Oct–Feb (Snowfall) & Mar–Jun (Pleasant Mountain Breeze)",
+        packing: "Warm winter jacket, thermals, grip shoes, sunglasses & lip balm.",
+        price: { "Budget Saver": "₹6,999", "Standard Comfort": "₹10,499", "Luxury Escape": "₹16,999" },
+        days: [
+          "Day 1: Arrival in Shimla via Delhi/Chandigarh. Sunset stroll along Mall Road & The Ridge.",
+          "Day 2: Kufri Himalayan snow viewpoint & scenic pine-valley drive to Manali.",
+          "Day 3: Hadimba Temple, Vashisht Hot Springs & riverside cafes in Old Manali.",
+          "Day 4: Solang Valley, Atal Tunnel & Sissu snow landscapes.",
+          "Day 5: Kullu valley stop & return transfer."
+        ]
+      },
+      "spiti-valley": {
+        name: "Spiti Valley & Kinnaur Mountain Trail",
+        duration: "7 Days / 6 Nights",
+        season: "May–October (Full Circuit Open)",
+        packing: "Layered fleece, windproof jacket, power bank & sturdy trekking shoes.",
+        price: { "Budget Saver": "₹9,499", "Standard Comfort": "₹14,999", "Luxury Escape": "₹22,500" },
+        days: [
+          "Day 1-2: Drive through Kinnaur Valley to Kalpa facing Kinner Kailash peaks.",
+          "Day 3: Nako Lake & ancient Tabo Monastery en route to Kaza.",
+          "Day 4: Key Monastery, Chicham Bridge & Hikkim Post Office.",
+          "Day 5-7: Chandratal Lake sunset & return drive via Manali."
+        ]
+      },
+      "kashmir": {
+        name: "Kashmir Snow & Dal Lake Retreat",
+        duration: "6 Days / 5 Nights",
+        season: "Apr–Oct (Blooming Valleys) & Dec–Feb (Snow)",
+        packing: "Heavy woolens, gloves, comfortable walking shoes & camera.",
+        price: { "Budget Saver": "₹11,999", "Standard Comfort": "₹16,999", "Luxury Escape": "₹26,999" },
+        days: [
+          "Day 1: Srinagar arrival, golden sunset Shikara ride & houseboat stay.",
+          "Day 2: Gulmarg Gondola cable car & snow meadows.",
+          "Day 3-4: Pahalgam Betaab Valley, Aru Valley & Sonamarg glacier.",
+          "Day 5-6: Mughal Gardens & airport departure."
+        ]
+      },
+      "rajasthan": {
+        name: "Royal Rajasthan Sunset & Palaces",
+        duration: "7 Days / 6 Nights",
+        season: "October to March",
+        packing: "Breathable cottons for day, light jacket for desert sunsets & sunglasses.",
+        price: { "Budget Saver": "₹10,999", "Standard Comfort": "₹16,500", "Luxury Escape": "₹27,500" },
+        days: [
+          "Day 1-2: Jaipur Amer Fort, Hawa Mahal & Nahargarh sunset view.",
+          "Day 3: Jodhpur Mehrangarh Fort & Blue City heritage walk.",
+          "Day 4-5: Udaipur sunset cruise on Lake Pichola & City Palace.",
+          "Day 6-7: Pushkar holy lake & departure."
+        ]
+      },
+      "chardham": {
+        name: "Sacred Char Dham Himalayan Yatra",
+        duration: "10 Days / 9 Nights",
+        season: "May–June & September–October",
+        packing: "Thermal innerwear, raincoat, walking stick & ID proofs.",
+        price: { "Budget Saver": "₹16,500", "Standard Comfort": "₹23,999", "Luxury Escape": "₹34,999" },
+        days: [
+          "Day 1-2: Haridwar to Barkot & Yamunotri Dham Darshan.",
+          "Day 3-4: Uttarkashi & Gangotri Dham Darshan.",
+          "Day 5-7: Shri Kedarnath Jyotirlinga Darshan.",
+          "Day 8-10: Badrinath Dham, Mana Village & return to Haridwar."
+        ]
+      },
+      "varanasi-ayodhya": {
+        name: "Kashi, Ayodhya & Prayagraj Circuit",
+        duration: "4 Days / 3 Nights",
+        season: "October to March",
+        packing: "Modest traditional wear, slip-on footwear & light shawl.",
+        price: { "Budget Saver": "₹6,499", "Standard Comfort": "₹9,800", "Luxury Escape": "₹15,500" },
+        days: [
+          "Day 1: Varanasi sunset boat ride & Dashashwamedh Ganga Aarti.",
+          "Day 2: Kashi Vishwanath Corridor & Sarnath tour.",
+          "Day 3-4: Ayodhya Ram Mandir Darshan, Saryu Aarti & Prayagraj Sangam."
+        ]
+      },
+      "goa-andaman": {
+        name: "Goa & Andaman Sunset Beach Holiday",
+        duration: "5 Days / 4 Nights",
+        season: "October to May",
+        packing: "Beachwear, SPF 50+ sunscreen, sunglasses & flip-flops.",
+        price: { "Budget Saver": "₹8,499", "Standard Comfort": "₹13,500", "Luxury Escape": "₹21,999" },
+        days: [
+          "Day 1: Arrival, beach resort check-in & sunset shore walk.",
+          "Day 2: North Goa forts & beaches / Havelock Radhanagar Beach.",
+          "Day 3: Scuba diving, water sports & sunset cruise.",
+          "Day 4-5: South Goa serene beaches & departure."
+        ]
+      },
+      "kerala": {
+        name: "Kerala Hills & Kovalam Cliff Beaches",
+        duration: "6 Days / 5 Nights",
+        season: "September to April",
+        packing: "Light cottons, light sweater for Munnar hills & sandals.",
+        price: { "Budget Saver": "₹10,999", "Standard Comfort": "₹15,999", "Luxury Escape": "₹24,500" },
+        days: [
+          "Day 1-2: Munnar misty tea plantations & waterfalls.",
+          "Day 3-4: Thekkady spice gardens & Alleppey private houseboat sunset.",
+          "Day 5-6: Varkala & Kovalam sunset beaches & departure."
+        ]
+      },
+      "dubai": {
+        name: "Dubai Skyline & Desert Sunset",
+        duration: "5 Days / 4 Nights",
+        season: "October to April",
+        packing: "Valid passport, UAE visa (we arrange), smart casuals & adapter.",
+        price: { "Budget Saver": "₹26,999", "Standard Comfort": "₹34,500", "Luxury Escape": "₹52,000" },
+        days: [
+          "Day 1: Dubai arrival & Marina Dhow Cruise dinner.",
+          "Day 2: Dubai City Tour & Burj Khalifa 124th Floor sunset views.",
+          "Day 3: Red Dunes Desert Safari with BBQ dinner.",
+          "Day 4-5: Abu Dhabi Grand Mosque & airport drop."
+        ]
+      },
+      "bali-thailand": {
+        name: "Bali, Thailand & Maldives Islands",
+        duration: "6 Days / 5 Nights",
+        season: "Apr–Oct (Bali) | Nov–Apr (Thailand)",
+        packing: "Swimwear, sunscreen, summer outfits & universal adapter.",
+        price: { "Budget Saver": "₹24,999", "Standard Comfort": "₹32,999", "Luxury Escape": "₹49,500" },
+        days: [
+          "Day 1: Island arrival & beachfront sunset dinner.",
+          "Day 2: Nusa Penida / Phi Phi Island boat excursion & snorkeling.",
+          "Day 3-4: Ubud waterfalls & rice terraces / Phuket coastal tour.",
+          "Day 5-6: Leisure spa, shopping & departure."
+        ]
+      },
+      "singapore-malaysia": {
+        name: "Singapore & Malaysia Family Delight",
+        duration: "6 Days / 5 Nights",
+        season: "Year-Round Tropical Destination",
+        packing: "Light breathable clothing, comfortable walking shoes, umbrella & universal adapter.",
+        price: { "Budget Saver": "₹36,999", "Standard Comfort": "₹45,500", "Luxury Escape": "₹64,000" },
+        days: [
+          "Day 1: Singapore arrival, Marina Bay Sands & Gardens by the Bay light show.",
+          "Day 2: Full-day Sentosa Island (Cable Car, Madame Tussauds & Wings of Time).",
+          "Day 3: Universal Studios Singapore adventure & Night Safari.",
+          "Day 4-5: Coach/flight to Kuala Lumpur — Petronas Twin Towers, Batu Caves & Genting Highlands.",
+          "Day 6: Bukit Bintang shopping & airport departure."
+        ]
+      },
+      "vietnam-cambodia": {
+        name: "Vietnam & Cambodia Cultural Escape",
+        duration: "7 Days / 6 Nights",
+        season: "October to April",
+        packing: "Light cottons, modest wear for temples, walking shoes & power adapter.",
+        price: { "Budget Saver": "₹31,999", "Standard Comfort": "₹39,999", "Luxury Escape": "₹56,500" },
+        days: [
+          "Day 1-2: Hanoi Old Quarter tour & overnight luxury cruise on emerald Ha Long Bay.",
+          "Day 3-4: Da Nang, Ba Na Hills Golden Hand Bridge & lantern-lit Hoi An Ancient Town.",
+          "Day 5-6: Fly to Siem Reap (Cambodia) — sunrise over Angkor Wat, Bayon & Ta Prohm.",
+          "Day 7: Local craft markets & airport departure."
+        ]
+      }
+    };
+
+    document.getElementById("generate-ai-btn").addEventListener("click", () => {
+      const destKey = document.getElementById("ai-dest").value;
+      const group = document.getElementById("ai-group").value;
+      const tier = document.getElementById("ai-tier").value;
+      const plan = aiBlueprints[destKey];
+      const cost = plan.price[tier];
+
+      const output = document.getElementById("ai-output");
+      const waText = encodeURIComponent(
+        `Hi WanderWarz! Generated AI Trip Plan:\n• Package: ${plan.name} (${plan.duration})\n• Travelers: ${group}\n• Tier: ${tier} (Est. ${cost}/person)\nPlease share exact rates and availability.`
+      );
+
+      output.innerHTML = `
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 border-b border-stone-200">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-sunset mb-1">✨ AI Recommended Blueprint • ${plan.duration}</div>
+            <h3 class="font-serif text-3xl font-bold text-brand-forest">${plan.name}</h3>
+            <p class="text-xs text-stone-500 mt-1">Tailored for: <strong>${group}</strong></p>
+          </div>
+          <div class="bg-brand-stone border border-stone-300/70 rounded-2xl px-5 py-3 text-left md:text-right shrink-0">
+            <div class="text-[11px] uppercase font-bold text-stone-500">Estimated Starting Price</div>
+            <div class="text-2xl font-extrabold text-brand-forest">${cost} <span class="text-xs font-normal text-stone-500">/ person</span></div>
+            <div class="text-[11px] text-brand-sunset font-semibold">${tier}</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 py-6">
+          <div class="lg:col-span-8 space-y-2.5">
+            <h4 class="font-bold text-xs uppercase tracking-wider text-stone-500 mb-2">Day-by-Day Schedule</h4>
+            ${plan.days.map(d => `
+              <div class="flex items-start gap-3 text-sm text-stone-700 bg-white p-3.5 rounded-xl border border-stone-200/80">
+                <span class="text-brand-sunset font-bold">✦</span>
+                <span>${d}</span>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="lg:col-span-4 space-y-4">
+            <div class="bg-amber-50 border border-amber-200/80 rounded-2xl p-4">
+              <div class="text-xs font-bold uppercase text-amber-900 mb-1">🌤️ Best Time to Visit</div>
+              <p class="text-xs text-stone-700 leading-relaxed">${plan.season}</p>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-2xl p-4">
+              <div class="text-xs font-bold uppercase text-stone-700 mb-1">🎒 Smart Packing Checklist</div>
+              <p class="text-xs text-stone-600 leading-relaxed">${plan.packing}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <span class="text-xs text-stone-500">*Final quote varies by exact dates and pickup city.</span>
+          <a href="https://wa.me/${PHONE_NUMBER}?text=${waText}" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-lg transition text-center">
+            💬 Send This AI Plan on WhatsApp →
+          </a>
+        </div>
+      `;
+
+      output.classList.remove("hidden");
+      output.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+
+    /* --- 4. CUSTOM DROPDOWN FORM --- */
+    document.getElementById("custom-trip-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("c-name").value.trim();
+      const phone = document.getElementById("c-phone").value.trim();
+      const region = document.getElementById("c-region").value;
+      const dest = document.getElementById("c-dest").value.trim() || "Not specified";
+      const duration = document.getElementById("c-duration").value;
+      const hotel = document.getElementById("c-hotel").value;
+      const transport = document.getElementById("c-transport").value;
+      const notes = document.getElementById("c-notes").value.trim() || "None";
+
+      const msg =
+`Hello WanderWarz! Custom Trip Inquiry:
+• Name: ${name}
+• Contact: ${phone}
+• Region: ${region}
+• Destination: ${dest}
+• Duration: ${duration}
+• Hotel Preference: ${hotel}
+• Transport: ${transport}
+• Notes: ${notes}`;
+
+      window.open(`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+    });
+
+    /* --- 5. AI CHATBOT WIDGET --- */
+    const chatWindow = document.getElementById("ai-chat-window");
+    const openChatBtn = document.getElementById("open-chat-btn");
+    const closeChatBtn = document.getElementById("close-chat-btn");
+    const chatMessages = document.getElementById("chat-messages");
+    const chatForm = document.getElementById("chat-form");
+    const chatInput = document.getElementById("chat-input");
+
+    openChatBtn.addEventListener("click", () => chatWindow.classList.toggle("hidden"));
+    closeChatBtn.addEventListener("click", () => chatWindow.classList.add("hidden"));
+
+    function getAIReply(query) {
+      const q = query.toLowerCase();
+      if (q.includes("manali") || q.includes("shimla") || q.includes("snow") || q.includes("kashmir")) {
+        return "🏔️ <strong>Hills & Snow:</strong> December to February is peak snow season in Shimla, Manali & Gulmarg! Packages start from ₹6,999 with private cabs and scenic mountain-view stays.";
+      }
+      if (q.includes("beach") || q.includes("sunset") || q.includes("goa") || q.includes("andaman")) {
+        return "🌅 <strong>Beach Sunsets:</strong> October to May offers clear golden sunsets in Goa, Radhanagar Beach (Andaman), Varkala & Bali! Beachfront packages start from ₹8,499.";
+      }
+      if (q.includes("dubai") || q.includes("visa") || q.includes("bali") || q.includes("singapore") || q.includes("vietnam")) {
+        return "✈️ <strong>International & Visas:</strong> We handle complete Dubai, Singapore & Vietnam visas, plus Bali & Thailand Visa-on-Arrival support with flights and airport transfers!";
+      }
+      if (q.includes("char dham") || q.includes("yatra") || q.includes("varanasi")) {
+        return "🛕 <strong>Spiritual Yatras:</strong> We arrange comfortable private cabs, senior-friendly hotels & registration support for Char Dham, Varanasi Ganga Aarti & Ayodhya.";
+      }
+      return "We customize every itinerary to match your exact dates, pickup city, and budget. Tap below to chat directly with our travel desk on WhatsApp!";
+    }
+
+    function appendMsg(text, isUser = false) {
+      const b = document.createElement("div");
+      if (isUser) {
+        b.className = "bg-brand-forest text-white p-3.5 rounded-2xl rounded-tr-none ml-8 text-xs sm:text-sm";
+        b.textContent = text;
+      } else {
+        b.className = "bg-white p-3.5 rounded-2xl rounded-tl-none border border-stone-200 text-stone-700 mr-6 text-xs sm:text-sm space-y-2";
+        const wa = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent("Hi WanderWarz, I was chatting with your AI assistant about: " + text.replace(/<[^>]*>?/gm, '').slice(0, 80))}`;
+        b.innerHTML = `<div>${text}</div><a href="${wa}" target="_blank" class="inline-block text-xs font-bold text-brand-sunset hover:underline pt-1">💬 Connect on WhatsApp (+91 7428227902) →</a>`;
+      }
+      chatMessages.appendChild(b);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    chatForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const txt = chatInput.value.trim();
+      if (!txt) return;
+      appendMsg(txt, true);
+      chatInput.value = "";
+      setTimeout(() => appendMsg(getAIReply(txt), false), 320);
+    });
+
+    document.querySelectorAll(".quick-ask").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const q = btn.textContent;
+        appendMsg(q, true);
+        setTimeout(() => appendMsg(getAIReply(q), false), 280);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderPackages("all");
+  </script>
+</body>
+</html>
